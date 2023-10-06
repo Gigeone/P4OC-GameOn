@@ -5,23 +5,25 @@ const modalBtn = document.querySelectorAll(".modal-btn");
 const formData = document.querySelectorAll(".formData");
 const modalCloseBtn = document.querySelector(".close");
 
-// launch modal event
+// Listener au click de l'Ouverture de la modal Formulaire
 modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
 
-// close modal event
+// Listener au click de la Fermeture de la modal Formulaire
 modalCloseBtn.addEventListener("click", closeModal);
 
 
-// launch modal form
+// fonction du lancement de la modal
 function launchModal() {
   modalbg.style.display = "block";
+  confirmModal.style.display= "none"
+  form.style.display= "block"
 }
-// close modal form
+// fonction de la fermeture de la modal
 function closeModal() {
   modalbg.style.display = "none";
 }
 
-
+// fonction pour passer la nav en responsive ou non 
 function editNav() {
   const x = document.getElementById("myTopnav");
   if (x.className === "topnav") {

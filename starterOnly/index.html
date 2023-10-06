@@ -55,7 +55,16 @@
       <div class="bground">
         <div class="content">
           <span class="close"></span>
+          
           <div class="modal-body">
+            <div class="formConfirmation">
+              <span class="confirmMessage">Merci ! Votre réservation a été reçue.</span>
+              <input
+                class="btn-submit button buttonCloseConfirmModal "
+                type="submit"
+                value="Fermer"
+              />
+            </div>
             <form
               name="reserve"
               action="index.html"
@@ -91,10 +100,9 @@
                 <label for="email">E-mail</label><br>
                 <input
                   class="text-control"
-                  type="email"
+                  type="text"
                   id="email"
                   name="email"
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                   required
                 /><br>
               </div>
@@ -222,7 +230,8 @@
         Copyright 2014 - 2022, GameOn Inc.
       </p>
     </footer>
-    <script src="modal.js"></script>
+    
     <script src="form.js"></script>
+    <script src="modal.js"></script>
   </body>
 </html>
